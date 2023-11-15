@@ -1,4 +1,4 @@
-const sliderWrapper = document.querySelector('.slider__wrapper');
+const sliderWrapper = document.querySelector('.slides__wrapper');
 const AMOUNT_OF_SLIDES = 5;
 const SLIDE_WIDTH = 500;
 const ANIMATION_TIME = 300;
@@ -10,6 +10,7 @@ const pointsWrapper = document.querySelector('.slider__points-wrapper');
 let currentSlideIndex = 0;
 
 const slidesHtml = createSlidesHtml(AMOUNT_OF_SLIDES);
+console.log(sliderWrapper);
 
 sliderWrapper.innerHTML = slidesHtml.slides;
 pointsWrapper.innerHTML = slidesHtml.points;
