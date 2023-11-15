@@ -32,12 +32,11 @@ function createSlidesHtml(amountOfSlides) {
   let slides = '';
   let points = '';
   for (let i = 0; i < amountOfSlides; i++) {
-    const imgSource = `https://source.unsplash.com/random?cat,kitten&${i}`;
+    // const imgSource = `https://source.unsplash.com/random?cat,kitten&${i}`;
     slides += `<div class="slider__slide" id="slide${i}" style="width: ${SLIDE_WIDTH}px">
-    <img class="slider__image" src="${imgSource}" alt="image of cat">
-    <p style="display: block; position: absolute; top: 50%; left: 50%; color: red; font-size: 20px">${
+    <img class="slider__image" src="./assets/img_${
       i + 1
-    }</p>
+    }.jpg" alt="image of cat">
     </div>`;
 
     points += `<input type="radio" class="slider__point" id="radio${i}" name="point" value="${i}" ${
