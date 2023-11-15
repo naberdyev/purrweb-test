@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>budss - for business</title>
+  </head>
+  <body>
+    <div id="burger" class="burger popup">
+      <div class="burger__body">
+        <div class="burger__content popup__content">
+          <a class="burger__close close-popup">
+            <svg
+              class="burger__cross"
+              xmlns="http://www.w3.org/2000/svg"
+              width="40"
+              height="40"
+              viewBox="0 0 40 40"
+              fill="none"
+            >
+              <rect
+                x="12.2218"
+                y="10.8076"
+                width="24"
+                height="2"
+                rx="1"
+                transform="rotate(45 12.2218 10.8076)"
+                fill="white"
+              />
+              <rect
+                width="24"
+                height="2"
+                rx="1"
+                transform="matrix(-0.707107 0.707107 0.707107 0.707107 27.7782 10.8076)"
+                fill="white"
+              />
+            </svg>
+          </a>
+          <a href="#form" class="button burger__button popup-link">
+            <span class="button__text">Contact sales</span>
+          </a>
+          <nav class="burger__nav">
+            <a href="" class="footer__link">For Business</a>
+            <a href="" class="footer__link">For Customers</a>
+            <a href="" class="footer__link">Privacy Policy</a>
+            <a href="" class="footer__link">Terms Of Use - Seller</a>
+            <a href="" class="footer__link">
+              Terms of Use - Sellers & Customers
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div id="form" class="form popup" novalidate>
+      <div class="form__body popup__body">
+        <div class="form__content popup__content">
+          <a href="" class="form__close close-popup">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M9.99978 10L13.5353 13.5355M6.46424 13.5355L9.99978 10L6.46424 13.5355ZM13.5353 6.46447L9.99978 10L13.5353 6.46447ZM9.99978 10L6.46424 6.46447L9.99978 10Z"
+                stroke="#B9B9B9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <form
+            class="form__form-area"
+            id="contact-sales"
+            action=""
+            method="POST"
+          >
+            <label class="form__label" for="name">
+              <span class="form__input-name">
+                Name
+                <span class="form__required">*</span>
+              </span>
+
+              <input
+                class="form__input-field"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Enter name"
+                required
+              />
+              <span class="form__input-alert form__input-alert_hidden">
+                This field is required.
+              </span>
+            </label>
+            <label class="form__label" for="email">
+              <span class="form__input-name">
+                Email
+                <span class="form__required">*</span>
+              </span>
+
+              <input
+                class="form__input-field"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Enter email"
+                required
+              />
+              <span class="form__input-alert form__input-alert_hidden">
+                This field is required.
+              </span>
+            </label>
+            <label class="form__label" for="phone-number">
+              <span class="form__input-name">
+                Phone number
+                <span class="form__required">*</span>
+              </span>
+              <input
+                class="form__input-field"
+                type="text"
+                name="phone-number"
+                id="phone-number"
+                placeholder="+7 900 000 00 00"
+                required
+              />
+              <div class="form__flag">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="22"
+                  height="16"
+                  viewBox="0 0 22 16"
+                  fill="none"
+                >
+                  <g clip-path="url(#clip0_1_11984)">
+                    <rect width="22" height="16" rx="2" fill="#1A47B8" />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 10.6666H22V16H0V10.6666Z"
+                      fill="#F93939"
+                    />
+                    <path
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      d="M0 0H22V5.33333H0V0Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_1_11984">
+                      <rect width="22" height="16" rx="2" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </div>
+
+              <span class="form__input-alert form__input-alert_hidden">
+                This field is required.
+              </span>
+            </label>
+            <label class="form__label" for="company">
+              <span class="form__input-name">Company</span>
+              <input
+                class="form__input-field"
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Enter company"
+              />
+            </label>
+            <label class="form__label" for="url">
+              <span class="form__input-name">Website/Store URL</span>
+              <input
+                class="form__input-field"
+                type="text"
+                name="url"
+                id="url"
+                placeholder="Enter Website/Store URL"
+              />
+            </label>
+
+            <p class="form__alert">Please fill in all required fields</p>
+            <p class="form__conditions">
+              By submitting this form you are agreeing to Budss's
+              <a class="form__link">Privacy Policy</a>
+              and
+              <a class="form__link">Terms of Use</a>
+            </p>
+            <a
+              href="#form"
+              type="submit"
+              class="button form__button button_inactive popup-link"
+            >
+              <span class="button__text">Contact sales</span>
+            </a>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="cookie popup open">
+      <div class="cookie__body cookie__body_hidden">
+        <div class="cookie__content popup__content">
+          <a class="cookie__close close-popup">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              fill="none"
+            >
+              <path
+                d="M9.99978 10L13.5353 13.5355M6.46424 13.5355L9.99978 10L6.46424 13.5355ZM13.5353 6.46447L9.99978 10L13.5353 6.46447ZM9.99978 10L6.46424 6.46447L9.99978 10Z"
+                stroke="#B9B9B9"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </a>
+          <p class="cookie__text">
+            This website uses cookies to ensure you get the best experience on
+            our website. They also allow us to analyze user behavior in order to
+            constantly improve the website for you.
+          </p>
+          <div class="cookie__buttons">
+            <a href="" class="button cookie__button close-popup">
+              <span class="button__text">Accept</span>
+            </a>
+            <a
+              href=""
+              class="button cookie__button close-popup button_white-background"
+            >
+              <span class="button__text">Decline</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="tabs">
+      <div class="wrapper tabs__wrapper">
+        <a class="tab tabs__tab tab_active">
+          <span>For Business</span>
+        </a>
+        <a class="tab tabs__tab" href="#">
+          <span>For Customers</span>
+        </a>
+      </div>
+    </nav>
+    <header class="header">
+      <div class="wrapper header__wrapper">
+        <a class="logo header__logo">
+          <img class="logo__img" src="../assets/logo.svg" alt="" srcset="" />
+          <h1 class="logo__brand-name">budss</h1>
+        </a>
+        <a href="#form" class="button header__button popup-link">
+          <span class="button__text">Contact sales</span>
+        </a>
+        <a href="#burger" class="header__burger popup-link">
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line"></div>
+        </a>
+      </div>
+    </header>
+    <section class="cover">
+      <div class="wrapper cover__wrapper">
+        <h2 class="cover__headline">
+          <span>Everyone</span>
+          <br />
+          <span>is an Influencer</span>
+        </h2>
+        <p class="cover__subtitle">
+          Budss is a payments as a service and WOM engine dedicated to
+          acquisition and retention of customers to your business.
+        </p>
+        <a href="#form" class="button cover__button popup-link">
+          <span class="button__text">Contact sales</span>
+        </a>
+        <div class="cover__img-wrap">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/line.webp 1x, ./assets/line@2x.webp 2x"
+            />
+            <img
+              class="cover__line"
+              src="./assets/line.png"
+              alt=""
+              srcset="./assets/line.png 1x, ./assets/line@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/woman.webp 1x, ./assets/woman@2x.webp 2x"
+            />
+            <img
+              class="cover__woman"
+              src="./assets/woman.png"
+              alt=""
+              srcset="./assets/woman.png 1x, ./assets/woman@2x.png 2x"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="about">
+      <div class="wrapper about__wrapper">
+        <h2 class="about__title">About Budss</h2>
+        <dvi class="about__pros-wrapper">
+          <div class="about__subtitle-wrapper">
+            <p class="about__subtitle">
+              Payment as a service, powered seamlessly by our network of
+              shoppers
+            </p>
+            <div class="about__subtitle-decoration"></div>
+          </div>
+          <div class="about__pros">
+            <div class="advantage about__advantage">
+              <picture>
+                <img
+                  class="advantage__icon"
+                  src="./assets/advantage_icon_01.svg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+              <div class="advantage__text-wrapper">
+                <h4 class="advantage__title">Contactless</h4>
+                <p class="advantage__subtitle">
+                  Budss uses near field communication (NFC) for making
+                  contactless payments.
+                </p>
+              </div>
+            </div>
+            <div class="advantage about__advantage">
+              <picture>
+                <img
+                  class="advantage__icon"
+                  src="./assets/advantage_icon_02.svg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+              <div class="advantage__text-wrapper">
+                <h4 class="advantage__title">Increased Buying Power</h4>
+                <p class="advantage__subtitle">
+                  Returning customers spend up to 3X more.
+                </p>
+              </div>
+            </div>
+            <div class="advantage about__advantage">
+              <picture>
+                <img
+                  class="advantage__icon"
+                  src="./assets/advantage_icon_03.svg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+              <div class="advantage__text-wrapper">
+                <h4 class="advantage__title">
+                  Analytics
+                  <br />
+                  & Insights
+                </h4>
+                <p class="advantage__subtitle">
+                  Gain a holistic view into your customers' buying behavior &
+                  purchasing patterns.
+                </p>
+              </div>
+            </div>
+            <div class="advantage about__advantage">
+              <picture>
+                <img
+                  class="advantage__icon"
+                  src="./assets/advantage_icon_04.svg"
+                  alt=""
+                  srcset=""
+                />
+              </picture>
+              <div class="advantage__text-wrapper">
+                <h4 class="advantage__title">Fraud Protection</h4>
+                <p class="advantage__subtitle">
+                  Budss handles all payments with a fraud prevention algorithm
+                  to flag high risk purchases & a user set PIN code to keep
+                  payment info secure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </dvi>
+        <div class="about__decoration-wrap">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/line2.webp 1x, ./assets/line2@2x.webp 2x"
+            />
+            <img
+              class="about__line"
+              src="./assets/line2.png"
+              alt=""
+              srcset="./assets/line2.png 1x, ./assets/line2@2x.png 2x"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="preview">
+      <div class="wrapper preview__wrapper">
+        <div class="preview__running-lines">
+          <div class="preview__line">
+            <p class="preview__text">How Budss Works</p>
+            <p class="preview__text preview__text_green">How Budss Works</p>
+            <p class="preview__text">How Budss Works</p>
+            <p class="preview__text preview__text_green">How Budss Works</p>
+          </div>
+          <div class="preview__line">
+            <p class="preview__text">How Budss Works</p>
+            <p class="preview__text preview__text_purple">How Budss Works</p>
+            <p class="preview__text">How Budss Works</p>
+            <p class="preview__text preview__text_purple">How Budss Works</p>
+          </div>
+          <div class="preview__line">
+            <p class="preview__text">How Budss Works</p>
+            <p class="preview__text preview__text_orange">How Budss Works</p>
+            <p class="preview__text">How Budss Works</p>
+            <p class="preview__text preview__text_orange">How Budss Works</p>
+          </div>
+        </div>
+        <div class="preview__phone">
+          <img
+            class="preview__mock"
+            src="./assets/phone_mock.png"
+            alt=""
+            srcset=""
+          />
+          <video
+            class="preview__video"
+            autoplay="autoplay"
+            loop
+            muted
+            playsinline
+            preload="auto"
+          >
+            <source src="./assets/preview_video.webm" type="video/webm" />
+          </video>
+        </div>
+      </div>
+    </section>
+    <section class="growth">
+      <div class="wrapper growth__wrapper">
+        <div class="growth__statistics">
+          <div class="growth__statistic">
+            <h3 class="growth__percentage">15%</h3>
+            <p class="growth__subtitle">Increase in Purchase Amount</p>
+          </div>
+          <div class="growth__statistic">
+            <h3 class="growth__percentage">30%</h3>
+            <p class="growth__subtitle">Growth in Annual Sales</p>
+          </div>
+          <div class="growth__statistic">
+            <h3 class="growth__percentage">10%</h3>
+            <p class="growth__subtitle">Growth in New Customers</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="why-budss">
+      <div class="wrapper why-budss__wrapper">
+        <h3 class="why-budss__title">Why Budss</h3>
+        <div class="why-budss__subtitle-wrap">
+          <p class="why-budss__subtitle">
+            We Provide Advanced Payment Solutions To Grow Your Business
+          </p>
+          <div class="why-budss__decoration"></div>
+        </div>
+        <div class="why-budss__about-service">
+          <div
+            class="service-description why-budss__service-description why-budss__service-description_number_first"
+          >
+            <div
+              class="why-budss__description-wrap why-budss__description-wrap_number_first"
+            >
+              <h4 class="service-description__title">
+                Turn your customers into loyal influencers
+              </h4>
+              <p class="service-description__subtitle">
+                Budss helps businesses harness the exponential power of loyal
+                customers for acquisition and retention.
+              </p>
+            </div>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_1.webp    1x,
+                  ./assets/service_description_1@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__img why-budss__img_number_first"
+                src="./assets/service_description_1.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_1.png    1x,
+                  ./assets/service_description_1@2x.png 2x
+                "
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_small_1.webp    1x,
+                  ./assets/service_description_small_1@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__small-img why-budss__small-img_number_first"
+                src="./assets/service_description_small_1.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_small_1.png    1x,
+                  ./assets/service_description_small_1@2x.png 2x
+                "
+              />
+            </picture>
+          </div>
+          <div
+            class="service-description why-budss__service-description why-budss__service-description_number_second"
+          >
+            <div
+              class="why-budss__description-wrap why-budss__description-wrap_number_second"
+            >
+              <h4 class="service-description__title">
+                Harness the power of buying in bulk
+              </h4>
+              <p class="service-description__subtitle">
+                Get at least 2X more sales with Budss Buying Groups. Your
+                customer base will grow exponentially as your customers add
+                their friends & family to your personalized group.
+              </p>
+            </div>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_2.webp    1x,
+                  ./assets/service_description_2@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__img why-budss__img_number_second"
+                src="./assets/service_description_2.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_2.png    1x,
+                  ./assets/service_description_2@2x.png 2x
+                "
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_small_2.webp    1x,
+                  ./assets/service_description_small_2@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__small-img why-budss__small-img_number_second"
+                src="./assets/service_description_small_2.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_small_2.png    1x,
+                  ./assets/service_description_small_2@2x.png 2x
+                "
+              />
+            </picture>
+          </div>
+          <div
+            class="service-description why-budss__service-description why-budss__service-description_number_third"
+          >
+            <div
+              class="why-budss__description-wrap why-budss__description-wrap_number_third"
+            >
+              <h4 class="service-description__title">
+                Supercharge Loyalty With Instant Cash Back
+              </h4>
+              <p class="service-description__subtitle">
+                Budss allows for shoppers to earn immediate cash back at their
+                favorite stores.
+              </p>
+            </div>
+
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_3.webp    1x,
+                  ./assets/service_description_3@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__img why-budss__img_number_third"
+                src="./assets/service_description_3.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_3.png    1x,
+                  ./assets/service_description_3@2x.png 2x
+                "
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_small_3.webp    1x,
+                  ./assets/service_description_small_3@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__small-img why-budss__small-img_number_third"
+                src="./assets/service_description_small_3.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_small_3.png    1x,
+                  ./assets/service_description_small_3@2x.png 2x
+                "
+              />
+            </picture>
+          </div>
+          <div
+            class="service-description why-budss__service-description why-budss__service-description_number_fourth"
+          >
+            <div
+              class="why-budss__description-wrap why-budss__description-wrap_number_fourth"
+            >
+              <h4 class="service-description__title">
+                Seasoned with AI and Gamification
+              </h4>
+              <p class="service-description__subtitle">
+                AI programming creates a personalized customer journey, offering
+                recommendations for their next purchase and optimizing rewards
+                for after purchase.
+              </p>
+            </div>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_4.webp    1x,
+                  ./assets/service_description_4@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__img why-budss__img_number_fourth"
+                src="./assets/service_description_4.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_4.png    1x,
+                  ./assets/service_description_4@2x.png 2x
+                "
+              />
+            </picture>
+            <picture>
+              <source
+                type="image/webp"
+                srcset="
+                  ./assets/service_description_small_4.webp    1x,
+                  ./assets/service_description_small_4@2x.webp 2x
+                "
+              />
+              <img
+                class="service-description__img why-budss__small-img why-budss__small-img_number_fourth"
+                src="./assets/service_description_small_4.png"
+                alt=""
+                srcset="
+                  ./assets/service_description_small_4.png    1x,
+                  ./assets/service_description_small_4@2x.png 2x
+                "
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="cta">
+      <div class="wrapper cta__wrapper">
+        <div class="cta__border">
+          <h3 class="cta__title">Let Your Business Grow</h3>
+          <a href="#form" class="button cta__button button_on-white popup-link">
+            <span class="button__text">Contact sales</span>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="about-socials">
+      <div class="wrapper about-socials__wrapper">
+        <div class="about-socials__text-wrap">
+          <h2 class="about-socials__title">Your Brand Awareness Maters</h2>
+          <p class="about-socials__subtitle">
+            Budss is a husle free solution to put your brand on any digital
+            surface including Instagram, Facebook, Twitter and TikTok
+          </p>
+        </div>
+        <div class="about-socials__socials-wrap">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/facebook.webp 1x, ./assets/facebook@2x.webp 2x"
+            />
+            <img
+              class="about-socials__social-badge"
+              src="./assets/facebook.png"
+              alt=""
+              srcset="./assets/facebook.png 1x, ./assets/facebook@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/twitter.webp 1x, ./assets/twitter@2x.webp 2x"
+            />
+            <img
+              class="about-socials__social-badge about-socials__social-badge_down"
+              src="./assets/twitter.png"
+              alt=""
+              srcset="./assets/twitter.png 1x, ./assets/twitter@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/instagram.webp 1x, ./assets/instagram@2x.webp 2x"
+            />
+            <img
+              class="about-socials__social-badge"
+              src="./assets/instagram.png"
+              alt=""
+              srcset="./assets/instagram.png 1x, ./assets/instagram@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/tiktok.webp 1x, ./assets/tiktok@2x.webp 2x"
+            />
+            <img
+              class="about-socials__social-badge about-socials__social-badge_down"
+              src="./assets/tiktok.png"
+              alt=""
+              srcset="./assets/tiktok.png 1x, ./assets/tiktok@2x.png 2x"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <section class="logos">
+      <div class="wrapper logos__wrapper">
+        <div class="logos__line">
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/logo_01.webp 1x, ./assets/logo_01@2x.webp 2x"
+            />
+            <img
+              class="logos__logo"
+              src="./assets/logo_01.png"
+              alt=""
+              srcset="./assets/logo_01.png 1x, ./assets/logo_01@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/logo_02.webp 1x, ./assets/logo_02@2x.webp 2x"
+            />
+            <img
+              class="logos__logo"
+              src="./assets/logo_02.png"
+              alt=""
+              srcset="./assets/logo_02.png 1x, ./assets/logo_02@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/logo_03.webp 1x, ./assets/logo_03@2x.webp 2x"
+            />
+            <img
+              class="logos__logo"
+              src="./assets/logo_03.png"
+              alt=""
+              srcset="./assets/logo_03.png 1x, ./assets/logo_03@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/logo_04.webp 1x, ./assets/logo_04@2x.webp 2x"
+            />
+            <img
+              class="logos__logo"
+              src="./assets/logo_04.png"
+              alt=""
+              srcset="./assets/logo_04.png 1x, ./assets/logo_04@2x.png 2x"
+            />
+          </picture>
+          <picture>
+            <source
+              type="image/webp"
+              srcset="./assets/logo_05.webp 1x, ./assets/logo_05@2x.webp 2x"
+            />
+            <img
+              class="logos__logo"
+              src="./assets/logo_05.png"
+              alt=""
+              srcset="./assets/logo_05.png 1x, ./assets/logo_05@2x.png 2x"
+            />
+          </picture>
+        </div>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="wrapper footer__wrapper">
+        <div class="footer__links">
+          <a class="logo footer__logo">
+            <img class="logo__img" src="../assets/logo.svg" alt="" srcset="" />
+            <h1 class="logo__brand-name">budss</h1>
+          </a>
+          <nav class="footer__nav">
+            <a href="" class="footer__link">For Business</a>
+            <a href="" class="footer__link">For Customers</a>
+            <a href="" class="footer__link footer__link_hidden">
+              Privacy Policy
+            </a>
+            <a href="" class="footer__link footer__link_hidden">
+              Terms Of Use - Seller
+            </a>
+            <a href="" class="footer__link footer__link_hidden">
+              Terms of Use - Sellers & Customers
+            </a>
+          </nav>
+          <div class="footer__buttons">
+            <a href="#form" class="button footer__button popup-link">
+              <span class="button__text">Contact sales</span>
+            </a>
+            <div class="footer__store-links-wrap">
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./assets/appstore.webp    1x,
+                    ./assets/appstore@2x.webp 2x
+                  "
+                />
+                <img
+                  class="footer__store-link"
+                  src="./assets/appstore.png"
+                  alt=""
+                  srcset="./assets/appstore.png 1x, ./assets/appstore@2x.png 2x"
+                />
+              </picture>
+              <picture>
+                <source
+                  type="image/webp"
+                  srcset="
+                    ./assets/googleplay.webp    1x,
+                    ./assets/googleplay@2x.webp 2x
+                  "
+                />
+                <img
+                  class="footer__store-link"
+                  src="./assets/googleplay.png"
+                  alt=""
+                  srcset="
+                    ./assets/googleplay.png    1x,
+                    ./assets/googleplay@2x.png 2x
+                  "
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+        <hr class="footer__divider" />
+        <div class="footer__info-wrap">
+          <p class="footer__info">
+            © Copyright 2023, All Rights Reserved by Budss
+          </p>
+          <div class="footer__info-links-wrap">
+            <a href="" class="footer__info footer__info_link">Privacy Policy</a>
+            <a href="" class="footer__info footer__info_link">
+              Terms Of Use - Seller
+            </a>
+            <a href="" class="footer__info footer__info_link">
+              Terms of Use - Sellers & Customers
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="./index.js"></script>
+  </body>
+</html>
